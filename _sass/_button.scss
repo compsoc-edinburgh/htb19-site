@@ -1,0 +1,30 @@
+.button {
+	text-decoration: none;
+	color: white;
+	
+	border: 1px solid white;
+	border-radius: 3px;
+	padding: 5px 2em 5px 2em;
+	margin: 10px;
+
+	background-color: rgba(255,255,255,0);
+	will-change: background-color;
+	cursor: pointer;
+	transition: background-color 0.2s cubic-bezier(0,0,0.3,1);
+
+	> .button__arrow {
+		display: inline-block;
+		
+		transform: none;
+		will-change: transform;
+		transition: transform 0.2s cubic-bezier(0,0,0.3,1);
+	}
+	&:hover {
+		background-color: rgba(255,255,255,0.3);
+
+		> .button__arrow {
+			transform: translateX(0.2em);
+		}
+	}
+
+}
