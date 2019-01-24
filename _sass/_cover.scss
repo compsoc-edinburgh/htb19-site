@@ -1,9 +1,12 @@
 @import "util/media";
 @import "util/layout";
 
+$all__transition-height: 150px;
+$jumbotron__height: calc(100vh + $all__transition-height);
+
 .jumbotron {
 	position: relative;
-	min-height: 100vh;
+	height: $jumbotron__height;
 
 	background: url(/static/bg.jpg);
 	background-position: 75% 75%;
@@ -47,19 +50,6 @@
 				max-width: 20em;
 			}
 
-			> a {
-				color: inherit;
-				opacity: 0.6;
-				text-decoration: none;
-				will-change: opacity;
-				mix-blend-mode: screen;
-				transition: opacity 0.15s cubic-bezier(0,0,0.3,1);
-
-				&:hover {
-					opacity: 0.7;
-				}
-			}
-
 		}
 
 		> .jumbotron__buttons {
@@ -69,6 +59,27 @@
 			@include media-desktop {
 				@include layout-row;
 			}
+		}
+	}
+
+	> .jumbotron__emailus {
+		position: absolute;
+		top: calc(100vh - 2.5em);
+		left: 50%;
+		transform: translateX(-50%);
+		color: white;
+	}
+
+	.jumbotron__transition {
+		display: block;	
+		width: 100%;
+		height: $all__transition-height;
+		background: rgba(0,0,0,0.3);
+		margin-bottom: -1px; // combat pixel line fighting
+
+		> polygon {
+			stroke: none;
+			fill: $faq__color;
 		}
 	}
 }

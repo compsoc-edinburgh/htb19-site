@@ -1,0 +1,35 @@
+.travel {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	min-height: calc(100vh + #{$all__transition-height});
+
+	color: white;
+
+	background: url(/static/bg2.jpg);
+	background-size: cover;
+
+
+	> h2 {
+		font-size: 3em;
+
+		padding: 0 1em 0 1em;
+		margin-bottom: 1.5em;
+	}
+
+}
+
+#gmap_canvas {
+	height: 70vh;
+	width: 80%;
+	margin-bottom: #{$all__transition-height / 2};
+}
+
+
+.travel__beforetransition {
+	> polygon { 
+		fill: $faq__color;
+	}
+	margin-top: -1px; // combat pixel line fighting
+}
