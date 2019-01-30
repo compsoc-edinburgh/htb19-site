@@ -8,10 +8,6 @@ $jumbotron__height: calc(100vh + $all__transition-height);
 	position: relative;
 	height: $jumbotron__height;
 
-	background: url(/static/bg.jpg);
-	background-position: 75% 75%;
-	background-size: cover;
-
 	> .jumbotron__text {
 		background-color: rgba(0,0,0,0.3);
 
