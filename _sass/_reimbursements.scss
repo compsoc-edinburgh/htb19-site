@@ -1,0 +1,34 @@
+@import "util/media";
+
+.reimbursements {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	color: white;
+
+	background-color: $faq__color;
+
+	> h2 {
+		font-size: 2em;
+		padding: 0 1em 0 1em;
+	}
+
+	padding-bottom: 40px;
+}
+
+.reimbursements__table {
+
+	padding: 0 2em 0 2em ;
+	width: 100%;
+	
+	@include media-desktop {
+		width: 50vw;
+	}
+
+	> thead > tr > th {
+		text-align: left;
+	}
+}
+

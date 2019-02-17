@@ -29,3 +29,10 @@
 	}
 	margin-top: -1px; // combat pixel line fighting
 }
+
+.travel__aftertransition {
+	> polygon { 
+		fill: $faq__color;
+	}
+	margin-bottom: -1px; // combat pixel line fighting
+}
