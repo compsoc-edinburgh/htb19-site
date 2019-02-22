@@ -31,8 +31,8 @@
 }
 
 .sponsorship__platinum > .sponsorship__row > a > img {
-	margin: 10px;
-	height: 100px;
+	margin: 20px;
+	height: 150px;
 	width: auto;
 
 	@include media-mobile {
@@ -42,8 +42,8 @@
 }
 
 .sponsorship__gold > .sponsorship__row > a > img {
-	margin: 10px;
-	height: 75px;
+	margin: 20px;
+	height: 100px;
 	width: auto;
 
 	@include media-mobile {
@@ -53,8 +53,8 @@
 }
 
 .sponsorship__silver > .sponsorship__row > a > img {
-	margin: 10px;
-	height: 50px;
+	margin: 20px;
+	height: 75px;
 	width: auto;
 
 	@include media-mobile {
@@ -91,7 +91,7 @@
 }
 
 .sponsorship__group--huel {
-	font-size: 1.5em;
+	font-size: 2em;
 	> a {
 		opacity: 1;
 		mix-blend-mode: initial;
