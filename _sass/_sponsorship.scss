@@ -31,8 +31,8 @@
 }
 
 .sponsorship__platinum > .sponsorship__row > a > img {
-	margin: 20px;
-	height: 150px;
+	margin: 40px;
+	height: 125px;
 	width: auto;
 
 	@include media-mobile {
@@ -42,8 +42,8 @@
 }
 
 .sponsorship__gold > .sponsorship__row > a > img {
-	margin: 20px;
-	height: 100px;
+	margin: 40px;
+	height: 95px;
 	width: auto;
 
 	@include media-mobile {
@@ -53,8 +53,8 @@
 }
 
 .sponsorship__silver > .sponsorship__row > a > img {
-	margin: 20px;
-	height: 75px;
+	margin: 40px;
+	height: 50px;
 	width: auto;
 
 	@include media-mobile {
