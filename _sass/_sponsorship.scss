@@ -75,6 +75,13 @@
 
 }
 
+.sponsorship__connectedenergy {
+	@include media-desktop {
+		transform: scale(3);
+	}
+
+}
+
 .sponsorship__group {
 	display: flex;
 	flex-direction: column;
