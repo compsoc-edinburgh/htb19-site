@@ -86,7 +86,12 @@
   timestamp: 2019-03-17T00:00
   icon: cutlery
   content: Our friends at Cultivate HQ are sending us triangular greetings. Served in Recharge area.
-  
+
+- title: Code Golf
+  timestamp: 2019-03-17T00:00
+  icon: flag
+  content: More information to come soon.
+
 - title: Scavenger Hunt
   timestamp: 2019-03-17T01:00
   icon: flag
