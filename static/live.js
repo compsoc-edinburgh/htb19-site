@@ -5,8 +5,18 @@ const timeDifference = date => (date.isAfter(moment())) ? date.fromNow() : date.
 
 // todo: move to localstorage
 const notifiedEvents = {}
+const pageLoad = moment()
 
-const update = () => {
+const checkForUpstreamUpdates = () => {
+    fetch(`https://api.github.com/repos/compsoc-edinburgh/htb19-site/commits?since=${pageLoad.toISOString()}`)
+        .then(r => r.json())
+        .then(r => {
+            if (r.length !== 0)
+                window.location.reload(true)
+        })
+}
+
+const updateLive = () => {
     document.querySelectorAll('.live__scheduleitem').forEach(node => {
         const date = extractDate(node)
 
@@ -66,10 +76,13 @@ const update = () => {
 
 window.onload = () => {
     Notification.requestPermission()
-    update()
+    updateLive()
 
     // update every 5 minutes
-    setInterval(update, 5 * 60 * 1000)
+    setInterval(updateLive, 5 * 60 * 1000)
+
+    // check for updates
+    setInterval(checkForUpstreamUpdates, 5 * 60 * 1000)
 }
 
 
