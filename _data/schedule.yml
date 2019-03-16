@@ -77,6 +77,11 @@
   timestamp: 2019-03-16T21:00
   icon: code
   content: More information to come. Room 4.33
+  
+- title: Scavenger Hunt
+  timestamp: 2019-03-16T23:00
+  icon: flag
+  content: More information to come soon.
 
 - title: Sleep
   timestamp: 2019-03-16T23:00
@@ -89,11 +94,6 @@
 
 - title: Code Golf
   timestamp: 2019-03-17T00:00
-  icon: flag
-  content: More information to come soon.
-
-- title: Scavenger Hunt
-  timestamp: 2019-03-17T01:00
   icon: flag
   content: More information to come soon.
   
