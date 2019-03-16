@@ -5,7 +5,7 @@ const timeDifference = date => (date.isAfter(moment())) ? date.fromNow() : date.
 
 // todo: move to localstorage
 const notifiedEvents = {}
-const pageLoad = moment()
+const pageLoad = moment().subtract(10, 'minutes')
 
 const checkForUpstreamUpdates = () => {
     fetch(`https://api.github.com/repos/compsoc-edinburgh/htb19-site/commits?since=${pageLoad.toISOString()}`)
