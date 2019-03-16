@@ -128,7 +128,7 @@ input.live__topbar__input:checked + label {
     }
 }
 
-.live__challenges {
+.live__information {
     min-height: 90vh;
     display: flex;
     flex-direction: column;
@@ -142,8 +142,86 @@ input.live__topbar__input:checked + label {
     }
 }
 
-.live__information {
-    @extend .live__challenges;
+.live__challenges {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    padding: 10px 20px 10px 20px;
+
+    margin-bottom: 100px;
+}
+
+.live__challenge {
+    opacity: 1 !important;
+    background-color: $faq__color;
+    mix-blend-mode: initial;
+    color: white;
+
+    //flex: 1 0 auto;
+    margin: 10px;
+    padding: 10px;
+    flex-grow: 1;
+
+    position: relative;
+
+    @include media-desktop {
+        width: 40vw;
+        flex-grow: 0;
+        clip-path: polygon(calc(0% + 40px) 0%, 100% 0%, calc(100% - 40px) 100%, 0% 100%);
+        margin: 10px 0 10px 0;
+        padding: 10px 45px 10px 45px;
+    }
+
+
+    
+    &:hover > .live__challengebutton {
+        background-color: $htb_accent_color;
+    }
+
+}
+
+
+.live__challengebutton {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px !important;
+
+    @include media-desktop {
+        width: 40px !important;
+        padding: 0 40px 0 40px;
+        clip-path: polygon(calc(0% + 40px) 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+    transition: background-color 0.25s cubic-bezier(0,0,0.3,1);
+}
+
+.live__challengebody {
+
+    margin-right: 70px;
+
+    > .live__challengetitle {
+        margin-top: 0;
+    }
+
+    > p {
+        height: 3em;
+    }
+
+    > .live__challengechannel {
+        font-family: monospace;
+    }
 }
 
 .live--hidden {

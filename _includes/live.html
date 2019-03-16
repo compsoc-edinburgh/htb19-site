@@ -26,7 +26,18 @@
         {% endfor %}
     </ul>
     <div class="live__challenges live--hidden" data-nav="chal">
-        <p>More info to come!</p>
+        {% for event in site.data.challenges  %}
+        <a class="live__challenge" href="https://hacktheburgh2019.slack.com/messages/{{ event.slackID }}" target="_blank">
+            <div class="live__challengebody">
+                <h3 class="live__challengetitle">{{ event.title }}</h3>
+                <p>{{ event.description }}</p>
+                <div class="live__challengechannel">On slack at #{{ event.slackName }}</div>
+            </div>
+            <div class="live__challengebutton">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+        </a>
+        {% endfor %}
     </div>
     <div class="live__information live--hidden" data-nav="info">
         <p>More info to come!</p>

@@ -3,6 +3,7 @@ const extractDate = node => moment(node.dataset.time)
 // according to Moment.js docs, fromNow will not overlap with toNow. This is not true.
 const timeDifference = date => (date.isAfter(moment())) ? date.fromNow() : date.fromNow()
 
+// todo: move to localstorage
 const notifiedEvents = {}
 
 const update = () => {
