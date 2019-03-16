@@ -39,10 +39,12 @@ const updateLive = () => {
                     // first time
                     notifiedEvents[node.dataset.time] = true
                     
-                    let notification = new Notification(`${node.dataset.title} ${date.fromNow()}!`, {
-                        badge: '/static/favicon.png',
-                        icon: '/static/favicon.png'
-                    })
+                    try {
+                        let notification = new Notification(`${node.dataset.title} ${date.fromNow()}!`, {
+                            badge: '/static/favicon.png',
+                            icon: '/static/favicon.png'
+                        })
+                    } catch (e) {}
 
                 }
             }
@@ -75,7 +77,9 @@ const updateLive = () => {
 }
 
 window.onload = () => {
-    Notification.requestPermission()
+    try {
+        Notification.requestPermission()
+    } catch (e) {}
     updateLive()
 
     // update every 5 minutes
