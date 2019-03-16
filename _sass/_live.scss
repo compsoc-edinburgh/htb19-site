@@ -135,19 +135,6 @@ input.live__topbar__input:checked + label {
     }
 }
 
-.live__information {
-    min-height: 90vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    > p {
-        padding: 10px;
-        color: white;
-        background-color: $faq__color;
-    }
-}
 
 .live__challenges {
     display: flex;
@@ -258,6 +245,46 @@ input.live__topbar__input:checked + label {
         > * {
             margin: 0;
 
+        }
+    }
+}
+
+.live__information {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    > .live__informationbody {
+        opacity: 1;
+        mix-blend-mode: initial;
+        padding: 10px;
+        color: white;
+        background-color: $faq__color;
+
+        transition: color 0.25s cubic-bezier(0,0,0.3,1);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding: 20px;
+
+        font-size: 1.2em;
+
+        > i {
+            font-size: 4em;
+        }
+
+        > p {
+            margin: 10px 0 0 0;
+        }
+
+        &:hover {
+            color: $htb_accent_color;
+            opacity: 1;
         }
     }
 }

@@ -8,7 +8,7 @@
         <input type="radio" name="livenav" id="chal" value="chal" class="live__topbar__input"/>
         <label for="chal">Challenges</label>
         <input type="radio" name="livenav" id="info" value="info" class="live__topbar__input"/>
-        <label for="info">Info</label>
+        <label for="info">Scavenger Hunt</label>
         <input type="radio" name="livenav" id="cdwn" value="cdwn" class="live__topbar__input"/>
         <label for="cdwn">Countdown</label>
     </div>
@@ -42,7 +42,10 @@
         {% endfor %}
     </div>
     <div class="live__information live--hidden" data-nav="info">
-        <p>More info to come!</p>
+        <a href="https://docs.google.com/document/d/19h3dVB5o-Fm2oBzB3Wwdrtxg0UAdZtBG5bLF4ckdqgs/edit?usp=sharing" class="live__informationbody" target="_blank">
+            <i class="fas fa-download"></i>
+            <p> download info </p>
+        </a>
     </div>
     <div class="live__countdown live--hidden" data-nav="cdwn">
         <div class="live__countdownbody">
