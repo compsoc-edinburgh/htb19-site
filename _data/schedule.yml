@@ -28,50 +28,50 @@
   icon: microphone
   content: "BlackRock will show you how to develop and present your idea in a way that can win the judges' hearts. Room 4.33 — volunteers will show you to it."
 
-- title: VSCode is Magical
+- title: Git Workshop
   timestamp: 2019-03-16T15:00
   icon: microphone
-  content: "Sadiq Baidani swears that VSCode saved his life. Learn all the tips and tricks that this text editor offers. Room G.03."
+  content: "Robert from MLH will show you how to use the world's most popular collaboration tool. Room G.03."
 
 - title: Edinburgh City Tour
   timestamp: 2019-03-16T16:00
   icon: flag
   content: "Not a local Edinburgher? This is your chance to learn more about the city. Meet Kyle at the Helpdesk."
 
-- title: Git Workshop
-  timestamp: 2019-03-16T16:00
-  icon: microphone
-  content: "Robert from MLH will show you how to use the world's most popular collaboration tool. Room G.03."
-
 - title: Every Hack is Better Served on the Blockchain
-  timestamp: 2019-03-16T16:30
+  timestamp: 2019-03-16T16:15
   icon: microphone
   content: "Learn how to use BigchainDB from Haryjot from Edjo. Room 4.33"
   
 - title: Modern NLP in Python
-  timestamp: 2019-03-16T17:15
+  timestamp: 2019-03-16T17:00
   icon: microphone
   content: "Natural Language Processing at a hackathon?! Absolutely. Daniel even got a PhD for it. Room G.03."
   
-- title: Test Driven Development (TDD)
-  timestamp: 2019-03-16T17:15
+ - title: VSCode is Magical
+  timestamp: 2019-03-16T17:30
   icon: microphone
-  content: "Adam from Craneware will share the ins and outs of TDD. Room 4.33"
+  content: "Sadiq Baidani swears that VSCode saved his life. Learn all the tips and tricks that this text editor offers. Room 4.33"
+  
+- title: Test Driven Development (TDD)
+  timestamp: 2019-03-16T18:15
+  icon: microphone
+  content: "Adam from Craneware will share the ins and outs of TDD. Room G.03"
 
 - title: Dinner
   timestamp: 2019-03-16T18:30
   icon: cutlery
   content: "Served in the Recharge area."
   
-- title: Board games with BlackRock
-  timestamp: 2019-03-16T20:30
-  icon: gamepad
-  content: BlackRock have brought their arsenal of Board Games for you to 
-  
-- title: "!Light by MLH"
+ - title: "!Light by MLH"
   timestamp: 2019-03-16T20:00
   icon: code
   content: More information to come. Room G.03
+  
+- title: Board games with BlackRock
+  timestamp: 2019-03-16T20:30
+  icon: gamepad
+  content: BlackRock have brought their arsenal of Board Games for you to enjoy. Level 2, Miniforum 1 (room with couches).
 
 - title: Slideshare Karaoke by MLH
   timestamp: 2019-03-16T21:00
