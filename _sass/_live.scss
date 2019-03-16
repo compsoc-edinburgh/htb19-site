@@ -66,6 +66,11 @@
     background-color: $faq__color;
     margin-bottom: 30px;
 
+    padding: 0 10px 0 10px;
+
+    @include media-desktop {
+        padding: 0 10vw 0 10vw;
+    }
 
     display: flex;
     flex-direction: row;
@@ -73,11 +78,12 @@
     align-content: center;
 
     > label {
-        width: 25vw;
         text-align: center;
         cursor: pointer !important;
         padding-top: 0.5em;
         padding-bottom: 0.5em;
+
+        flex-grow: 1;
 
         color: white;
 
@@ -99,6 +105,7 @@
 input.live__topbar__input {
     position: fixed;
     opacity: 0;
+
 }
 
 input.live__topbar__input:checked + label {
@@ -223,6 +230,35 @@ input.live__topbar__input:checked + label {
 
     > .live__challengechannel {
         font-family: monospace;
+    }
+}
+
+
+.live__countdown {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    > .live__countdownbody {
+        padding: 10px;
+        color: white;
+        background-color: $faq__color;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @include media-desktop {
+            font-size: 2em;
+        }
+
+        > * {
+            margin: 0;
+
+        }
     }
 }
 

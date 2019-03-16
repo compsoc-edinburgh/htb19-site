@@ -76,6 +76,13 @@ const updateLive = () => {
     // TODO: scroll if there are no active schedule items
 }
 
+const updateCountdown = () => {
+    const endDate = moment('2019-03-17T12:00')
+    const now = moment()
+
+    document.querySelector('.live__countdown-show').innerText = `${endDate.diff(now, 'hours')} hours, ${endDate.diff(now, 'minutes') % 60} minutes, ${endDate.diff(now, 'seconds') % 60} seconds`
+}
+
 window.onload = () => {
     try {
         Notification.requestPermission()
@@ -84,6 +91,10 @@ window.onload = () => {
 
     // update every 5 minutes
     setInterval(updateLive, 5 * 60 * 1000)
+
+    // update the coundown every 500 ms
+    setInterval(updateCountdown, 500)
+    updateCountdown()
 
     // check for updates
     setInterval(checkForUpstreamUpdates, 5 * 60 * 1000)

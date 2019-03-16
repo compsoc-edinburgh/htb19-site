@@ -9,6 +9,8 @@
         <label for="chal">Challenges</label>
         <input type="radio" name="livenav" id="info" value="info" class="live__topbar__input"/>
         <label for="info">Info</label>
+        <input type="radio" name="livenav" id="cdwn" value="cdwn" class="live__topbar__input"/>
+        <label for="cdwn">Countdown</label>
     </div>
     <ul class="live__schedule" data-nav="live">
         {% for event in site.data.schedule %}
@@ -42,6 +44,13 @@
     <div class="live__information live--hidden" data-nav="info">
         <p>More info to come!</p>
     </div>
+    <div class="live__countdown live--hidden" data-nav="cdwn">
+        <div class="live__countdownbody">
+            <h1 class="live__countdown-show">some amount of time</h1>
+            <p>remaining before the deadline</p>
+        </div>
+    </div>
+
     <svg class="live__aftertransition" viewBox="0 0 100 10" preserveAspectRatio="none">
 		<polygon points="100 0 100 10 0 10"/>
 	</svg>
