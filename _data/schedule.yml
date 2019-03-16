@@ -1,0 +1,142 @@
+- title: Registration
+  timestamp: 2019-03-16T09:00
+  icon: globe
+  content: "Held at the Informatics Forum, 10 Crichton Street. Bring your student ID, proof of age and your e-ticket."
+
+- title: Opening ceremony
+  timestamp: 2019-03-16T11:00
+  icon: microphone
+  content: "Meet us at 50 George Square Lecture Theathre — follow the volunteers. A word from organisers, some house rules, sponsor introductions and all hacktastic things."
+
+- title: Hacking Begins
+  timestamp: 2019-03-16T12:00
+  icon: code
+  content: "This is it. You have 24 hours to save the world."
+
+- title: Lunch
+  timestamp: 2019-03-16T12:00
+  icon: cutlery
+  content: "Served outside the Forum entrance."
+
+- title: Speed Teaming
+  timestamp: 2019-03-16T13:00
+  icon: play
+  content: "Don't have a team? Not an issue. Come to G.03 for a little speed dating style teambuilding game. Doors are open till 14:30."
+
+- title: How to Win a Hackathon
+  timestamp: 2019-03-16T14:00
+  icon: microphone
+  content: "BlackRock will show you how to develop and present your idea in a way that can win the judges' hearts. Room 4.33 — volunteers will show you to it."
+
+- title: VSCode is Magical
+  timestamp: 2019-03-16T15:00
+  icon: microphone
+  content: "Sadiq Baidani swears that VSCode saved his life. Learn all the tips and tricks that this text editor offers. Room G.03."
+
+- title: Edinburgh City Tour
+  timestamp: 2019-03-16T16:00
+  icon: flag
+  content: "Not a local Edinburgher? This is your chance to learn more about the city. Meet Kyle at the Helpdesk."
+
+- title: Git Workshop
+  timestamp: 2019-03-16T16:00
+  icon: microphone
+  content: "Robert from MLH will show you how to use the world's most popular collaboration tool. Room G.03."
+
+- title: Every Hack is Better Served on the Blockchain
+  timestamp: 2019-03-16T16:30
+  icon: microphone
+  content: "Learn how to use BigchainDB from Haryjot from Edjo. Room 4.33"
+  
+- title: Modern NLP in Python
+  timestamp: 2019-03-16T17:15
+  icon: microphone
+  content: "Natural Language Processing at a hackathon?! Absolutely. Daniel even got a PhD for it. Room G.03."
+  
+- title: Test Driven Development (TDD)
+  timestamp: 2019-03-16T17:15
+  icon: microphone
+  content: "Adam from Craneware will share the ins and outs of TDD. Room 4.33"
+
+- title: Dinner
+  timestamp: 2019-03-16T18:30
+  icon: cutlery
+  content: "Served in the Recharge area."
+  
+- title: Board games with BlackRock
+  timestamp: 2019-03-16T20:30
+  icon: gamepad
+  content: BlackRock have brought their arsenal of Board Games for you to 
+  
+- title: "!Light by MLH"
+  timestamp: 2019-03-16T20:00
+  icon: code
+  content: More information to come. Room G.03
+
+- title: Slideshare Karaoke by MLH
+  timestamp: 2019-03-16T21:00
+  icon: code
+  content: More information to come. Room G.03
+
+- title: Sleep
+  timestamp: 2019-03-16T23:00
+  content: If you would like to catch some Zs, ask our crew to guide you to rooms on levels 2 and 5 where you will find cozy couches to nap on. Sleeping areas close at 9.
+
+- title: Midnight Pizza by Cultivate HQ
+  timestamp: 2019-03-17T00:00
+  icon: cutlery
+  content: Our friends at Cultivate HQ are sending us triangular greetings. Served in Recharge area.
+  
+- title: Scavenger Hunt
+  timestamp: 2019-03-17T01:00
+  icon: flag
+  content: More information to come soon.
+  
+- title: Arthur's Seat Climb
+  timestamp: 2019-03-17T06:00
+  icon: flag
+  content: Nothing is more extraodinary than seeing the sun rise from Arthur's Seat. Join Victor at the Helpdesk for a morning refresher to the tallest mountain in the area.
+
+- title: Breakfast
+  timestamp: 2019-03-17T08:00
+  icon: cutlery
+  content: Catered from a van outside the building. If you have dietary requirements, please speak to crew member.
+
+- title: Hack Submission
+  timestamp: 2019-03-17T11:00
+  icon: paper-plane
+  content: Submit your hack on Devpost.
+
+- title: Hacking ends
+  timestamp: 2019-03-17T12:00
+  icon: hand-paper-o
+  content: More information to come.
+
+- title: Lunch
+  timestamp: 2019-03-17T12:00
+  icon: cutlery
+  content: Served outside the Forum.
+
+- title: Judging
+  timestamp: 2019-03-17T13:30
+  icon: play
+  content: More information to come.
+
+- title: Closing Ceremony
+  timestamp: 2019-03-17T15:30
+  icon: trophy
+  content: Make sure to take all of your belongings with you. Hosted in 50 George Square Lecure Theatre. 
+
+- title: Hackathon ends
+  timestamp: 2019-03-17T17:30
+  icon: hand-o-right
+  content: (Nearly) the last good byes and kisses before you leave Hack the Burgh.
+  
+- title: Post Hack the Burgh Drinks
+  timestamp: 2019-03-17T19:30
+  icon: hand-o-right
+  content: Celebrate the end of the hackathon, meet fellow hackers, organisers and sponsors! The pub is a minute away from the Forum - St. Andrew's Brewing Co. Poterrow.
+  
+  
+  
+  

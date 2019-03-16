@@ -1,0 +1,64 @@
+@import "util/media";
+
+.live {
+    padding-top: 30px;
+}
+
+.live__schedule { padding: 0 0 70px 0; }
+
+
+.live__scheduleitem {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-begin;
+
+    color: white;
+    background-color: $footer__color;
+
+    padding: 0 50px 0 50px;
+
+    margin: 30px 30px 30px 30px;
+    @include media-desktop {
+        margin: 30px 120px 30px 120px;
+
+        clip-path: polygon(calc(0% + 50px) 0%, 100% 0%, calc(100% - 50px) 100%, 0% 100%);
+    }
+
+
+    > .live__scheduleitembody {
+        flex-grow: 1;
+    }
+
+    &.live__scheduleitem--passed { background-color: #c7c7c7; opacity: 0.7; }
+    &.live__scheduleitem--active { background-color: $htb_accent_color; }
+}
+
+.live__scheduleitem__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline;
+
+    > h2 {
+        margin-bottom: 0;
+    }
+
+    @include media-desktop {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.live__aftertransition {
+    
+    display: block;	
+    width: 100%;
+    height: $all__transition-height;
+    margin-bottom: -1px; // combat pixel line fighting
+
+    > polygon {
+        stroke: none;
+        fill: $faq__color;
+    }
+}

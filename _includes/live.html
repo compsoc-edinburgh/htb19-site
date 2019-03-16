@@ -1,0 +1,20 @@
+<div class="live" data-parallax="scroll" data-speed="0.2" data-image-src="/static/bg.jpg">
+    <ul class="live__schedule">
+    {% for event in site.data.schedule %}
+    <li class="live__scheduleitem" data-time="{{ event.timestamp }}" data-duration="{{ event.duration }}" data-title="{{ event.title }}"> 
+        <div class="live__scheduleitembody">
+            <div class="live__scheduleitem__title">
+                <h2> {{ event.title }} </h2>
+                <span class="live__scheduleitem__title--countdown">{{ event.timestamp }}</span>
+            </div>
+            <div class="live__eventdetails">
+                <p>{{ event.content }}</p>
+            </div>
+        </div>
+    </li>
+    {% endfor %}
+    </ul>
+    <svg class="live__aftertransition" viewBox="0 0 100 10" preserveAspectRatio="none">
+		<polygon points="100 0 100 10 0 10"/>
+	</svg>
+</div>
