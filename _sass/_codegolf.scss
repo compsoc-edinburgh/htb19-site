@@ -1,0 +1,62 @@
+@import "util/media";
+
+.codegolf {
+    height: 100vh;
+    background-color: $faq__color;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.codegolf__bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.codegolf > form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+
+    color: white;
+
+    @include media-desktop {
+        width: 40vw;
+    }
+
+    > input, textarea {
+        font-family: 'Inconsolata', monospace;
+        background-color: rgba(0,0,0,0);
+        border: 0;
+        border-bottom: 1px solid rgba(255,255,255,0.3);
+        outline: none;
+        font-size: 1em;
+        color: white;
+        margin: 1em 0 1em 0;
+    }
+
+    > button {
+        font-family: 'Inconsolata', monospace;
+        background-color: rgba(255,255,255,0);
+        outline: none;
+        border: 0;
+
+        padding: 10px;
+        color: white;
+        font-size: 1em;
+        cursor: pointer;
+
+        transition: background-color 0.25s cubic-bezier(0,0,0.3,1);
+
+        &:hover {
+            background-color: rgba(255,255,255,0.3);
+        }
+    }
+}

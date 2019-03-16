@@ -1,0 +1,41 @@
+<div class="codegolf">
+    <form action="https://getsimpleform.com/messages?form_api_token=d3e869799efb766370d40a695382b239" method="post">
+        <h1> code golf </h1>
+        <input type="hidden" name="redirect_to" value="https://2019.hacktheburgh.com/codegolf-done" />
+        <textarea name="code" id="code" placeholder="code" rows=5 required></textarea>
+        <input
+            type="text"
+            class="text"
+            value=""
+            name="language"
+            id="language"
+            placeholder="language"
+            required
+            autocomplete="off"
+            autocorrect="off"
+            autocapitalize="off"
+            spellcheck="off"/>
+        <input
+            type="text"
+            class="text"
+            value=""
+            required
+            name="compilerflags"
+            id="compilerflags"
+            placeholder="compiler flags"/>
+        <input
+            type="text"
+            class="text"
+            value=""
+            required
+            name="slackname"
+            id="slackname"
+            placeholder="slack username">
+
+        <button type="submit">submit</button>
+    </form>
+    <div class="codegolf__bottom">
+        {% include footer.html %}
+    </div>
+</div>
+
