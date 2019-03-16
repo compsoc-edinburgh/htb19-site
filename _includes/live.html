@@ -1,19 +1,36 @@
 <div class="live" data-parallax="scroll" data-speed="0.2" data-image-src="/static/bg.jpg">
-    <ul class="live__schedule">
-    {% for event in site.data.schedule %}
-    <li class="live__scheduleitem" data-time="{{ event.timestamp }}" data-duration="{{ event.duration }}" data-title="{{ event.title }}"> 
-        <div class="live__scheduleitembody">
-            <div class="live__scheduleitem__title">
-                <h2> {{ event.title }} </h2>
-                <span class="live__scheduleitem__title--countdown">{{ event.timestamp }}</span>
+    <div class="live__topbar">
+        <a class="live__topbarback" href="/">
+            <i class="fas fa-home"></i>
+        </a>
+        <input type="radio" name="livenav" id="live" value="live" class="live__topbar__input" checked/>
+        <label for="live">Live</label>
+        <input type="radio" name="livenav" id="chal" value="chal" class="live__topbar__input"/>
+        <label for="chal">Challenges</label>
+        <input type="radio" name="livenav" id="info" value="info" class="live__topbar__input"/>
+        <label for="info">Info</label>
+    </div>
+    <ul class="live__schedule" data-nav="live">
+        {% for event in site.data.schedule %}
+        <li class="live__scheduleitem" data-time="{{ event.timestamp }}" data-duration="{{ event.duration }}" data-title="{{ event.title }}"> 
+            <div class="live__scheduleitembody">
+                <div class="live__scheduleitem__title">
+                    <h2> {{ event.title }} </h2>
+                    <span class="live__scheduleitem__title--countdown">{{ event.timestamp }}</span>
+                </div>
+                <div class="live__eventdetails">
+                    <p>{{ event.content }}</p>
+                </div>
             </div>
-            <div class="live__eventdetails">
-                <p>{{ event.content }}</p>
-            </div>
-        </div>
-    </li>
-    {% endfor %}
+        </li>
+        {% endfor %}
     </ul>
+    <div class="live__challenges live--hidden" data-nav="chal">
+        <p>More info to come!</p>
+    </div>
+    <div class="live__information live--hidden" data-nav="info">
+        <p>More info to come!</p>
+    </div>
     <svg class="live__aftertransition" viewBox="0 0 100 10" preserveAspectRatio="none">
 		<polygon points="100 0 100 10 0 10"/>
 	</svg>

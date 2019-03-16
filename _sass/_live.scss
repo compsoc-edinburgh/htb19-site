@@ -1,7 +1,6 @@
 @import "util/media";
 
 .live {
-    padding-top: 30px;
 }
 
 .live__schedule { padding: 0 0 70px 0; }
@@ -61,4 +60,92 @@
         stroke: none;
         fill: $faq__color;
     }
+}
+
+.live__topbar {
+    background-color: $faq__color;
+    margin-bottom: 30px;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+
+    > label {
+        width: 25vw;
+        text-align: center;
+        cursor: pointer !important;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+
+        color: white;
+
+        transition: background-color 0.25s cubic-bezier(0,0,0.3,1);
+
+        @include media-desktop {
+            clip-path: polygon(calc(0% + 20px) 0%, 100% 0%, calc(100% - 20px) 100%, 0% 100%);
+            margin: 0 -10px 0 -10px;
+        }
+
+        &:hover {
+            background-color: rgba(216, 32, 42, 0.5);
+            
+        }
+    }
+
+}
+
+input.live__topbar__input {
+    position: fixed;
+    opacity: 0;
+}
+
+input.live__topbar__input:checked + label {
+    background-color: $htb_accent_color;
+}
+
+.live__topbarback {
+    position: absolute;
+    left: 0;
+
+    padding: 0.5em 2em 0.5em 1em;
+    color: white;
+
+    display: none; // hide on mobile
+    @include media-desktop {
+        clip-path: polygon(0% 0%, 100% 0%, calc(100% - 20px) 100%, 0% 100%);
+        display: initial;
+    }
+    cursor: pointer;
+
+    transition: background-color 0.25s cubic-bezier(0,0,0.3,1);
+    opacity: 1;
+
+    &:hover {
+        opacity: 1;
+        background-color: rgba(216, 32, 42, 0.5);
+    }
+}
+
+.live__challenges {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    > p {
+        padding: 10px;
+        color: white;
+        background-color: $faq__color;
+    }
+}
+
+.live__information {
+    @extend .live__challenges;
+}
+
+.live--hidden {
+    display: none;
 }
