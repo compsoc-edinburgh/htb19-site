@@ -216,7 +216,9 @@ input.live__topbar__input:checked + label {
     }
 
     > p {
-        height: 3em;
+        @include media-desktop {
+           height: 3em;
+        }
     }
 
     > .live__challengechannel {
